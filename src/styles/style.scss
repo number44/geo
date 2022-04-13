@@ -1,0 +1,72 @@
+@use './composition/mixins';
+@use './composition/normalizer';
+@use './composition/typography';
+@use './composition/layout';
+@use './composition/colors' as *;
+
+// Blocks
+@use './blocks/preloader';
+@use './blocks/hero';
+@use './blocks/navbar';
+@use './blocks/numbers';
+@use './blocks/scrollIndicator';
+@use './blocks/about';
+@use './blocks/footer';
+@use './blocks/btn';
+@use './blocks/logos';
+@use './blocks/up';
+@use './blocks/cookies';
+@use './blocks/single';
+@use './blocks/sidebar';
+
+body {
+	// background: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+	background: url('../../public/bg.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+main {
+	// background: rgba(#fff, 0.6);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+
+	min-height: 200vh;
+}
+:host >>> .swiper-pagination {
+	pointer-events: all !important;
+}
+.test {
+	background: purple;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hidden {
+	visibility: hidden !important;
+}
+.sect {
+	min-height: 100vh;
+	display: grid;
+	place-content: center;
+}
+.target {
+	background: #2c2c2c;
+	min-height: 500px;
+	display: grid;
+	place-items: center;
+	color: white;
+}
+.no-wrap {
+	white-space: nowrap;
+}
+
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+	// background: $pale;
+}
+.hide {
+	display: none !important;
+}
