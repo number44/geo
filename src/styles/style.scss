@@ -34,7 +34,7 @@ main {
 
 	min-height: 200vh;
 }
-:host >>> .swiper-pagination {
+:host .swiper-pagination {
 	pointer-events: all !important;
 }
 .test {
